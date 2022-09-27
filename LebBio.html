@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleLebron.css"
+    <title>Biography</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+</head>
+<!-- background picture --> 
+<body background="https://th.bing.com/th/id/R.03471e6a937ae832fdd4ec2f0d9c433d?rik=5e3KRuAAKgMl7w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-vZ1P2F-OGlE%2fUEHWxDX3VPI%2fAAAAAAAAIOc%2fvj1wTdBo-b0%2fs0%2fbasketball-1920x1080-wallpaper.jpg&ehk=g%2b%2f%2bJqr2jsWvxkwmplvzY1U7L2SZPe5jrs7lm5KRDzA%3d&risl=&pid=ImgRaw&r=0 ">
+
+<!-- change colour button --> 
+        <div class="wrap">
+        <button class="button" onclick = "gfg_Run()">change colour</button>
+      </div>
+          
+        
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+           
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function gfg_Run() {
+                changeColor('red');
+            }         
+        </script>
+  <!-- sliding image code --> 
+    <div class="Containee">
+    <h1>Lebron James</h1>
+    <h2>Professional Basketball Player</h2>
+    <div class="Contain">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="Images/bronn.jfif"></div>
+                <div class="swiper-slide"><img src="Images/bron22.jfif"></div>
+                <div class="swiper-slide"><img src="Images/bron2.jfif"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </div>           
+        
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+                
+            },
+
+        loop: true,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+     });
+            
+
+
+        
+    </script>
+
+
+<!-- paragraph --> 
+   <div class = "paragraphlebron">      
+    <p>
+   LeBron James, in full LeBron Raymone James, byname King James, (born December 30, 1984, Akron, Ohio, U.S.), American professional basketball player who is widely considered one of the greatest all-around players of all time and who won National Basketball Association (NBA) championships with the Miami Heat (2012 and 2013), the Cleveland Cavaliers (2016), and the Los Angeles Lakers (2020).A locally known basketball prodigy since elementary school, James was named Ohio’s Mr. Basketball (high-school player of the year) three times while leading Akron’s St. Vincent–St. Mary High School to three Ohio state championships in his four years on the team. He became a national media sensation in his junior year after appearing on the cover of Sports Illustrated, where he was billed by the magazine as “The Chosen One.” James was the consensus national high-school player of the year in his senior season, and he was selected by the Cleveland Cavaliers with the first overall selection of the 2003 NBA draft. Additionally, he signed an unprecedented $90 million endorsement contract with the Nike shoe company before he ever played a professional game.
+    </p>
+   </div>
+<!-- maps --> 
+      <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0331062487517!2d-118.2717387702681!3d34.04302186365153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sCrypto.com%20Arena!5e0!3m2!1sen!2sca!4v1664156847287!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      </p>
+      <!-- home button --> 
+    <a href="index.html" class=btn>Homepage</a>
+    </div>
+    
+
+
+    
+</body>
+</html>
+
+    

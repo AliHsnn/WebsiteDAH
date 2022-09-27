@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleKobe.css"
+    <title></title>
+    <link link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+</head>
+
+
+
+<!-- background image --> 
+  
+<body background = "Images/back.jpg" style="background-repeat:no-repeat;background-size:100% 100%">
+
+  <!-- change colour button --> 
+      <div class="wrap">
+        <button class="button" onclick = "gfg_Run()">change colour</button>
+      </div>
+          
+        
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+           
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function gfg_Run() {
+                changeColor('purple');
+            }         
+        </script> 
+
+
+  <!-- sliding pictures --> 
+    <div class="Containee">
+    <h1>Kobe Bryant</h1>
+    <h2>Professional Basketball Player</h2>
+    <div class="Contain">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="Images/kobe.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/kobe1.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/kobe2.jpeg"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </div>           
+        
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+                
+            },
+
+        loop: true,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+     });
+            
+
+
+        
+    </script>
+
+
+
+    <div class = "paragraph">      
+    <p>
+       Kobe Bryant, in full Kobe Bean Bryant, (born August 23, 1978, Philadelphia, Pennsylvania, U.S.—died January 26, 2020, Calabasas, California), American professional basketball player, who helped lead the Los Angeles Lakers of the National Basketball Association (NBA) to five championships (2000–02 and 2009–10).Bryant’s father, Joe (“Jelly Bean”) Bryant, was a professional basketball player who spent eight seasons in the NBA and eight more playing in Italy, where Bryant went to school. When his family returned to the United States, Bryant played basketball at Lower Merion High School in Ardmore, Pennsylvania, where he received several national Player of the Year awards and broke the southeastern Pennsylvania scoring record set by Wilt Chamberlain with 2,883 points. Bryant opted to forgo college and declared himself eligible for the NBA draft when he graduated from high school. The Charlotte Hornets chose him with the 13th pick of the 1996 draft. He was traded to the Lakers shortly thereafter and became the second youngest NBA player in history when the 1996–97 season opened. He quickly proved his merit with the Lakers and was selected for the NBA All-Star Game in just his second season, becoming the youngest All-Star.
+    </p
+    </div>
+<!-- maps --> 
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0331062487517!2d-118.2717387702681!3d34.04302186365153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sCrypto.com%20Arena!5e0!3m2!1sen!2sca!4v1664156847287!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+      </p>
+    <a href="index.html" class=btn>Homepage</a>
+    </div>
+  <!DOCTYPE html>
+<html lang='en' dir="ltr">  
+
+   
+
+
+    
+</body>
+</html>

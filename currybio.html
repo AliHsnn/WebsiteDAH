@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleKobe.css"
+    <title></title>
+    <link link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+</head>
+
+
+
+<!-- background image --> 
+  
+<body background="https://th.bing.com/th/id/R.03471e6a937ae832fdd4ec2f0d9c433d?rik=5e3KRuAAKgMl7w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-vZ1P2F-OGlE%2fUEHWxDX3VPI%2fAAAAAAAAIOc%2fvj1wTdBo-b0%2fs0%2fbasketball-1920x1080-wallpaper.jpg&ehk=g%2b%2f%2bJqr2jsWvxkwmplvzY1U7L2SZPe5jrs7lm5KRDzA%3d&risl=&pid=ImgRaw&r=0 ">
+
+
+  <!-- change colour button --> 
+      <div class="wrap">
+        <button class="button" onclick = "gfg_Run()">change colour</button>
+      </div>
+          
+        
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+           
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function gfg_Run() {
+                changeColor('black');
+            }         
+        </script> 
+
+
+  <!-- flip code --> 
+    <div class="Containee">
+    <h1>Stephen Curry</h1>
+    <h2>Professional Basketball Player</h2>
+    <div class="Contain">
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="Images/curry.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/curry1.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/curry2.jpeg"></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+    </div>           
+        
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".swiper", {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+                
+            },
+
+        loop: true,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+     });
+            
+
+
+        
+    </script>
+
+<!-- info --> 
+
+  <div class = "paragraph">   
+    <p>
+    Stephen Curry, in full Wardell Stephen Curry II, byname Steph, (born March 14,  1988, Akron, Ohio, U.S.), American professional basketball player who led the  Golden State Warriors of the National Basketball Association (NBA) to championships in 2014–15, 2016–17, 2017–18, and 2021–22 and to the best regular- season record in league history (73–9) in 2015–16. Curry grew up immersed in basketball as the son of 16-year NBA veteran sharpshooter Dell Curry. The younger Curry learned the intricacies of the game from his father. His keen shooting and high “basketball IQ” were not enough to persuade college coaches to overlook his wiry frame and unremarkable 6-foot (1.8-metre) height. He did not receive scholarship offers from major college basketball programs and attended Davidson (North Carolina) College, which had an enrollment of fewer than 2,000 students. He quickly made his mark, however, averaging 21.5 points per game as a freshman to lead all first-year players in the country. Curry became a national sensation during his sophomore season, when he led 10th-seeded Davidson on an improbable run to the Elite Eight of the National Collegiate Athletic Association men’s top-division basketball championship tournament in a performance that featured what would soon be recognized as his signature shot: a three-pointer from well outside the line. His junior season did not feature any such postseason heroics, but his average of 28.6 points per game led the country, and he was named a consensus first-team All-American. He then entered the 2009 NBA draft, in which he was selected by the Warriors with the seventh overall pick.
+        
+    </p>
+  </div>
+      <!-- maps --> 
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.939254245609!2d-122.39007124897664!3d37.76802252022131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc67f4400e9%3A0x7d6793e3d8a141e3!2sChase%20Center!5e0!3m2!1sen!2sca!4v1663805685168!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+      </p>
+      <!-- home button --> 
+    <a href="index.html" class=btn>Homepage</a>
+    </div>
+  <!DOCTYPE html>
+<html lang='en' dir="ltr">  
+
+   
+
+
+    
+</body>
+</html>

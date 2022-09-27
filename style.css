@@ -1,0 +1,373 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: "https://th.bing.com/th/id/R.03471e6a937ae832fdd4ec2f0d9c433d?rik=5e3KRuAAKgMl7w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-vZ1P2F-OGlE%2fUEHWxDX3VPI%2fAAAAAAAAIOc%2fvj1wTdBo-b0%2fs0%2fbasketball-1920x1080-wallpaper.jpg&ehk=g%2b%2f%2bJqr2jsWvxkwmplvzY1U7L2SZPe5jrs7lm5KRDzA%3d&risl=&pid=ImgRaw&r=0 ";
+}
+
+img{
+  width: 500px;
+  height: 600px;
+  float: left;
+}
+
+img:hover {
+  cursor: pointer;
+  background: no-repeat;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 20px 35px rgba(145, 92, 182, .4);
+}
+
+
+
+
+
+.menu {
+  width: 100%;
+  overflow: auto;
+}
+
+.menu a {
+  font-family: arial;
+  float: left;	
+  padding: 20px;
+  color: rgb(233, 233, 233);
+  text-decoration: none;
+  font-size: 30px;
+  width: 25%; 
+  text-align: center; 
+}
+
+.nmenu a:hover {
+  background-color: #000000;
+}
+
+.menu a.active {
+  background-color: rgb(255, 25, 0);
+}
+
+h2
+{
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-size: 10vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+h2::before
+{
+  content: attr(data-text);
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #fe0101;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #fe0101;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+
+@keyframes animate
+{
+  0%,10%,100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 100%;
+  }
+}
+
+
+.slide-c{
+  width:500px;
+  height:100px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
+
+.tittle{
+color:rgb(255, 0, 0) ;
+text-align: center;
+font-size: 200;
+font-style: oblique;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 14vh;
+    background-color: #810bc1;
+    font-family: "Poppin", sans-serif;  
+}
+
+.logo{
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.logos{
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width:55%;
+
+}
+.nav-links li{
+  list-style: none;
+  
+}
+ .nav-links a{
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     letter-spacing: 3px;
+     font-weight: bold;
+     font-size: 14px;
+ }
+
+.container {
+    position: absolute;
+    top: 10%;
+    padding-right: 50px;
+    transform: translate(-50%,-50%);
+    
+}
+
+.text{
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    font-family: Poppins;
+    font-size: 40px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+navs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 14vh;
+    background-color: #3429d6
+    
+    
+}
+
+.logo{
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px 
+
+}
+.navs-links{
+  display: flex;
+  justify-content: space-around;
+  width:40%
+
+}
+.navs-links li{
+  list-style: none;
+  
+}
+
+
+.navs-links a{
+     color: gold;
+     text-decoration:none;
+     letter-spacing:3px;
+     font-weight:bold;
+     font-size:14px;
+
+
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #e1bf14;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }  
+    .burger{
+    display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+
+.test {
+  width: 500px;
+  height: 1000px;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.flip2-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip2-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip2-box:hover .flip2-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip2-box-front, .flip2-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip2-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip2-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+ * {cursor: url(https://cur.cursors-4u.net/sports/spo-2/spo145.cur), auto !important;} 
